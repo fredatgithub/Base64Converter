@@ -69,6 +69,7 @@
       this.buttonConvert = new System.Windows.Forms.Button();
       this.textBoxTarget = new System.Windows.Forms.TextBox();
       this.buttonConvertAgain = new System.Windows.Forms.Button();
+      this.buttonConvertBack = new System.Windows.Forms.Button();
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -399,7 +400,7 @@
       // 
       // buttonConvertAgain
       // 
-      this.buttonConvertAgain.Location = new System.Drawing.Point(238, 295);
+      this.buttonConvertAgain.Location = new System.Drawing.Point(180, 295);
       this.buttonConvertAgain.Name = "buttonConvertAgain";
       this.buttonConvertAgain.Size = new System.Drawing.Size(132, 23);
       this.buttonConvertAgain.TabIndex = 5;
@@ -407,18 +408,29 @@
       this.buttonConvertAgain.UseVisualStyleBackColor = true;
       this.buttonConvertAgain.Click += new System.EventHandler(this.buttonConvertAgain_Click);
       // 
+      // buttonConvertBack
+      // 
+      this.buttonConvertBack.Location = new System.Drawing.Point(333, 295);
+      this.buttonConvertBack.Name = "buttonConvertBack";
+      this.buttonConvertBack.Size = new System.Drawing.Size(132, 23);
+      this.buttonConvertBack.TabIndex = 6;
+      this.buttonConvertBack.Text = "Convert back target";
+      this.buttonConvertBack.UseVisualStyleBackColor = true;
+      this.buttonConvertBack.Click += new System.EventHandler(this.buttonConvertBack_Click);
+      // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(568, 564);
+      this.Controls.Add(this.buttonConvertBack);
       this.Controls.Add(this.buttonConvertAgain);
       this.Controls.Add(this.textBoxTarget);
       this.Controls.Add(this.buttonConvert);
       this.Controls.Add(this.textBoxSource);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
-      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.Margin = new System.Windows.Forms.Padding(2);
       this.Name = "FormMain";
       this.ShowIcon = false;
       this.Text = "Base 64 Converter";
@@ -474,5 +486,6 @@
     private System.Windows.Forms.Button buttonConvert;
     private System.Windows.Forms.TextBox textBoxTarget;
     private System.Windows.Forms.Button buttonConvertAgain;
+    private System.Windows.Forms.Button buttonConvertBack;
   }
 }

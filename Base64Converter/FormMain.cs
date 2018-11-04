@@ -744,5 +744,13 @@ namespace Base64Converter
       string base64 = Convert.ToBase64String(bytes);
       textBoxTarget.Text = base64;
     }
+
+    private void buttonConvertBack_Click(object sender, EventArgs e)
+    {
+      // convert back
+      string base64 = textBoxTarget.Text;
+      byte[] bytes = Convert.FromBase64String(base64);
+      textBoxTarget.Text = Encoding.UTF8.GetString(bytes);
+    }
   }
 }
